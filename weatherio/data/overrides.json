@@ -1,0 +1,175 @@
+[
+  {
+    "lat": "17.4239",
+    "lon": "78.4983",
+    "date": "2025-10-08",
+    "newValues": {
+      "temperature": 30,
+      "humidity": 70
+    },
+    "updatedAt": "2025-10-08T06:10:55.237Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  },
+  {
+    "lat": "17.385",
+    "lon": "78.4867",
+    "date": "2025-10-10",
+    "newValues": {
+      "tempC": 25.6,
+      "humidityPct": 67,
+      "windKph": 10.1,
+      "precipMm": 0,
+      "conditionText": "Sunny"
+    },
+    "updatedAt": "2025-10-09T04:46:06.334Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  },
+  {
+    "lat": "17.385",
+    "lon": "78.4867",
+    "date": "2025-10-09",
+    "newValues": {
+      "tempC": 34.9,
+      "humidityPct": 76,
+      "windKph": 10,
+      "precipMm": 0.7,
+      "conditionText": "Light rain shower"
+    },
+    "updatedAt": "2025-10-09T05:11:12.307Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  },
+  {
+    "lat": "18.9582",
+    "lon": "72.8321",
+    "date": "2025-10-08",
+    "newValues": {
+      "tempC": 36,
+      "humidityPct": 70,
+      "windKph": 11.6,
+      "precipMm": 0,
+      "conditionText": "Mist"
+    },
+    "updatedAt": "2025-10-09T06:48:18.458Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  },
+  {
+    "lat": "18.9582",
+    "lon": "72.8321",
+    "date": "2025-10-09",
+    "newValues": {
+      "tempC": 35,
+      "humidityPct": 70,
+      "windKph": 11.6,
+      "precipMm": 0,
+      "conditionText": "Mist"
+    },
+    "updatedAt": "2025-10-09T06:58:44.201Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  },
+  {
+    "lat": "18.9582",
+    "lon": "72.8321",
+    "date": "2025-10-08",
+    "newValues": {
+      "tempC": 36,
+      "humidityPct": 70,
+      "windKph": 11.6,
+      "precipMm": 0,
+      "conditionText": "Mist"
+    },
+    "updatedAt": "2025-10-09T06:58:53.130Z",
+    "updatedBy": "anonymous",
+    "version": 2,
+    "active": false
+  },
+  {
+    "lat": "18.9582",
+    "lon": "72.8321",
+    "date": "2025-10-10",
+    "newValues": {
+      "tempC": 38,
+      "humidityPct": 67,
+      "windKph": 10.1,
+      "precipMm": 0,
+      "conditionText": "Sunny"
+    },
+    "updatedAt": "2025-10-09T06:59:00.166Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  },
+  {
+    "lat": "18.9582",
+    "lon": "72.8321",
+    "date": "2025-10-10",
+    "newValues": {
+      "tempC": 27.8,
+      "humidityPct": 67,
+      "windKph": 10.1,
+      "precipMm": 0,
+      "conditionText": "Sunny"
+    },
+    "updatedAt": "2025-10-09T07:33:40.569Z",
+    "updatedBy": "anonymous",
+    "version": 2,
+    "active": false
+  },
+  {
+    "lat": "17.385",
+    "lon": "78.4867",
+    "date": "2025-10-09",
+    "newValues": {
+      "tempC": 30,
+      "humidityPct": 76,
+      "windKph": 10,
+      "precipMm": 0.7,
+      "conditionText": "Light rain shower"
+    },
+    "updatedAt": "2025-10-09T07:46:50.453Z",
+    "updatedBy": "anonymous",
+    "version": 2,
+    "active": false
+  },
+  {
+    "lat": "17.385",
+    "lon": "78.4867",
+    "date": "2025-10-10",
+    "newValues": {
+      "tempC": 31,
+      "humidityPct": 67,
+      "windKph": 10.1,
+      "precipMm": 0,
+      "conditionText": "Sunny"
+    },
+    "updatedAt": "2025-10-09T07:47:00.867Z",
+    "updatedBy": "anonymous",
+    "version": 2,
+    "active": false
+  },
+  {
+    "lat": "17.385",
+    "lon": "78.4867",
+    "date": "2025-10-11",
+    "newValues": {
+      "tempC": 32,
+      "humidityPct": 70,
+      "windKph": 11.1,
+      "precipMm": 0,
+      "conditionText": "Sunny"
+    },
+    "updatedAt": "2025-10-09T07:47:11.327Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": false
+  }
+]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather.io</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Weather.io</h1>
+    <div class="location-controls">
+      <label>Lat:
+        <input type="number" id="lat-input" step="0.0001" />
+      </label>
+      <label>Lon:
+        <input type="number" id="lon-input" step="0.0001" />
+      </label>
+      <button id="save-location" title="Save location">Save</button>
+    </div>
+  </header>
+
+  <main>
+   <section class="date-selector">
+  <button id="today-btn" class="active">Today</button>
+  <button id="tomorrow-btn">Tomorrow</button>
+  <button id="dayafter-btn">Day After</button>
+</section>
+
+    </section>
+
+    <section id="status" class="status"></section>
+
+    <section id="weather-card" class="weather-card hidden">
+      <div class="temp-row">
+        <span id="condition-icon" class="condition-icon">☁️</span>
+        <span id="temperature" class="temperature">--°C</span>
+      </div>
+      <div id="condition-text" class="condition-text">Condition</div>
+      <div class="stats">
+        <div>Humidity: <span id="humidity">--</span>%</div>
+        <div>Wind: <span id="wind">--</span> kph</div>
+        <div>Precip: <span id="precip">--</span> mm</div>
+      </div>
+      <div id="source" class="source"></div>
+      <div class="actions">
+        <button id="update-btn">Update Weather</button>
+        <button id="remove-btn" class="hidden">Remove Override</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Update modal overlay -->
+  <div id="update-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Update Weather</h2>
+      <form id="update-form">
+        <label>Temperature (°C):
+          <input type="number" id="upd-temp" step="0.1" required />
+        </label>
+        <label>Humidity (%):
+          <input type="number" id="upd-humidity" step="1" required />
+        </label>
+        <label>Wind (kph):
+          <input type="number" id="upd-wind" step="0.1" required />
+        </label>
+        <label>Precipitation (mm):
+          <input type="number" id="upd-precip" step="0.1" required />
+        </label>
+        <label>Condition:
+          <input type="text" id="upd-condition" required />
+        </label>
+        <div class="modal-actions">
+          <button type="submit">Save</button>
+          <button type="button" id="cancel-update">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

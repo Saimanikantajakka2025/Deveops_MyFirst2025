@@ -1,0 +1,234 @@
+/*
+ * Basic styling for the Weather.io demo.
+ * The goal is to keep the styles lightweight and readable without
+ * relying on any external frameworks.  Feel free to customise
+ * colours, spacing or typography to match your preferences.
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f4f7fa;
+  color: #222;
+  height: 100%;
+}
+
+header.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+header.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header.app-header .location-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+header.app-header input[type="number"] {
+  width: 6rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+header.app-header button {
+  padding: 0.3rem 0.6rem;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.date-selector {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.date-selector button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.date-selector button.active {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #2980b9;
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.weather-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.weather-card.hidden {
+  display: none;
+}
+
+.temp-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.condition-icon {
+  font-size: 2.5rem;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.condition-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.source {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.actions button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.actions button:hover {
+  background-color: #27ae60;
+}
+
+.actions button#remove-btn {
+  background-color: #e74c3c;
+}
+
+.actions button#remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.modal-content input[type="number"],
+.modal-content input[type="text"] {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.modal-actions button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.modal-actions button:hover {
+  background-color: #2980b9;
+}
