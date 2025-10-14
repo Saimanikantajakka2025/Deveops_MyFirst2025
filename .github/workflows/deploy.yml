@@ -1,0 +1,29 @@
+name: CI/CD Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  id-token: write        # required to get OIDC token from GitHub
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials from OIDC
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::ACCOUNT_ID:role/GitHubActions_DeployRole_Weatherio
+          aws-region: ap-south-1
+
+      - name: Upload artifact to S3
+        run: |
+          aws s3 cp build/myartifact.zip s3://YOUR_BUCKET_NAME/path/myartifact.zip
+
+      - name: Create CodeDeploy deployment
+        run: |
+          aws deploy create-deployment --application-name YOUR_APP_NAME --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name YOUR_DEPLOYMENT_GROUP --s3-location bucket=YOUR_BUCKET_NAME,bundleType=zip,key=path/myartifact.zip
