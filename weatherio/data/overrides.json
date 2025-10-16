@@ -171,5 +171,21 @@
     "updatedBy": "anonymous",
     "version": 1,
     "active": false
+  },
+  {
+    "lat": "17.385",
+    "lon": "78.4867",
+    "date": "2025-10-16",
+    "newValues": {
+      "tempC": 24.4,
+      "humidityPct": 77,
+      "windKph": 11.4,
+      "precipMm": 0,
+      "conditionText": "Patchy rain nearby"
+    },
+    "updatedAt": "2025-10-16T04:35:26.397Z",
+    "updatedBy": "anonymous",
+    "version": 1,
+    "active": true
   }
 ]
